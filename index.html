@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="titulo">Cadastro</h1>
+        <p id="subtitulo">Complete suas informações</p>
+
+        <form id="contactForm" action="https://script.google.com/macros/s/AKfycbz4QtYU95yqh2DjLgaFjehOubpuUiP5t7gpa3gv9TbTmy1gcWuosagS7HpZ2F1OEYM/exec" method="POST">
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="Nome"><strong>Nome</strong></label>
+                    <input type="text" name="Nome" id="Nome" required> 
+                </div>
+
+                <div class="campo">
+                    <label for="Sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="Sobrenome" id="Sobrenome" required>
+                </div>
+            </fieldset>
+
+            <div class="campo">
+                <label for="Email"><strong>Email</strong></label>
+                <input type="email" name="Email" id="Email" required>
+            </div>
+
+            <div class="campo">
+                <label for="objetivo1"><strong>Quem é o público-alvo do site?</strong></label>
+                <input type="text" name="objetivo1" id="objetivo1">
+            </div>
+
+            <div class="campo">
+                <label for="objetivo2"><strong>Você tem alguma preferência de design ou inspiração?</strong></label>
+                <input type="text" name="objetivo2" id="objetivo2">
+            </div>
+
+            <div class="campo">
+                <label><strong>Qual a paleta de cor que você deseja no seu site?</strong></label>
+                <label>
+                    <input type="radio" name="cor" value="Front-end" checked>Cores quantes
+                </label>
+                <label>
+                    <input type="radio" name="cor" value="back-end">Cores frias
+                </label>
+                <label>
+                    <input type="radio" name="cor" value="full-stack">Na paleta da logo
+                </label>
+            </div>
+
+            <div class="campo">
+                <label for="faltar"><strong>Como podemos entrar em contato com você para discutir detalhes ou revisões?</strong></label>
+                <select name="faltar" id="faltar">
+                    <option selected disabled value="">Selecione</option>
+                    <option value="Email">Email</option>
+                    <option value="telefone">telefone</option>
+                    <option value="WhatsApp">WhatsApp</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label><strong>Qual é o conteúdo que já possui para o site?</strong></label><br><br>
+                    <input type="checkbox" id="tecnologia1" name="tecnologia1" value="Textos">
+                    <label for="tecnologia1"> Textos</label>
+
+                    <input type="checkbox" id="tecnologia2" name="tecnologia2" value="Imagens">
+                    <label for="tecnologia2">Imagens</label>
+
+                    <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Logotipo">
+                    <label for="tecnologia3">Logotipo</label>
+
+                    <input type="checkbox" id="tecnologia4" name="tecnologia4" value="Vídeos">
+                    <label for="tecnologia4">Vídeos</label>
+                </div>
+            </fieldset>
+            
+            <div class="campo">
+                <label for="deseja1"><strong>Qual o objetivo que você espera conseguir fazendo um site?</strong></label>
+                <textarea rows="6" id="deseja1" name="deseja1" style="width: 100%;"></textarea>
+            </div>
+
+            <div class="campo">
+                <label for="deseja2"><strong>Conte um pouco mais sobre o que você deseja encontrar no seu site:</strong></label>
+                <textarea rows="6" id="deseja2" name="deseja2" style="width: 100%;"></textarea>
+            </div>
+
+            <button type="submit">Concluído</button>
+        </form>
+        <p id="formStatus"></p>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
